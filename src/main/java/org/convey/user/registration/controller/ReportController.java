@@ -58,11 +58,11 @@ public class ReportController {
         User user = usersList.get(0);
 
         int index = 0;
-        while (index++ < 100000) {
+        while (++index <= 50000) {
             usersList.add((User) org.apache.commons.lang.SerializationUtils.clone(user));
         }
 
-        JRFileVirtualizer virtualizer = new JRFileVirtualizer(100, System.getProperty("java.io.tempdir"));
+        JRFileVirtualizer virtualizer = new JRFileVirtualizer(10, System.getProperty("java.io.tempdir"));
         params.put(JRParameter.REPORT_VIRTUALIZER, virtualizer);
         JRDataSource jrDataSource = new JRBeanCollectionDataSource(usersList);
         dynamicReport = buildReport();
