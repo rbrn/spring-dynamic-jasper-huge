@@ -248,6 +248,12 @@
             <classifier>sources</classifier>
         </dependency>
         <dependency>
+            <groupId>ar.com.fdvs</groupId>
+            <artifactId>DynamicJasper</artifactId>
+            <version>5.0.0</version>
+            <classifier>test-sources</classifier>
+        </dependency>
+        <dependency>
             <groupId>aspectj</groupId>
             <artifactId>aspectjtools</artifactId>
             <version>1.5.4</version>
