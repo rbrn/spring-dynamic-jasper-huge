@@ -15,7 +15,6 @@ import ar.com.fdvs.dj.domain.constants.GroupLayout;
 import ar.com.fdvs.dj.domain.constants.Page;
 import ar.com.fdvs.dj.domain.entities.DJGroup;
 import ar.com.fdvs.dj.test.BaseDjReportTest;
-import ar.com.fdvs.dj.test.ReportExporter;
 import ar.com.fdvs.dj.test.TestRepositoryProducts;
 import ar.com.fdvs.dj.util.SortUtils;
 import net.sf.jasperreports.engine.JRDataSource;
@@ -24,7 +23,7 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.export.JRXlsExporterParameter;
 import net.sf.jasperreports.engine.export.ooxml.JRXlsxExporter;
 
-public class XlsReportTest extends BaseDjReportTest {
+public class XlsxReportTest extends BaseDjReportTest {
 
     public DynamicReport buildReport() throws Exception {
 
@@ -86,7 +85,7 @@ public class XlsReportTest extends BaseDjReportTest {
 
 
     public static void main(String[] args) throws Exception {
-        XlsReportTest test = new XlsReportTest();
+        XlsxReportTest test = new XlsxReportTest();
         test.testReport();
     }
 
